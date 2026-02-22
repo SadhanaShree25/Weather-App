@@ -1,0 +1,30 @@
+.current-weather {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 18px;              /* reduced padding */
+  border-radius: 16px;
+  margin: 20px auto;
+  text-align: center;
+  width: 320px;               /* fixed smaller width */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.current-weather img {
+  width: 90px;                /* smaller icon */
+}
+
+.current-weather h1 {
+  font-size: 2.2rem;          /* smaller temp size */
+  margin: 8px 0;
+}
+
+.condition {
+  font-size: 1rem;
+}
+
+.extra-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
