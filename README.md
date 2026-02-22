@@ -1,16 +1,108 @@
-# React + Vite
+# 🌤️ Weather Forecast App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Weather Forecast Application** built using **React (Vite)** and the **OpenWeather API**.  
 
-Currently, two official plugins are available:
+This application allows users to search for any city and view the **current weather** along with a **5-day forecast**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 Search weather by city name  
+- 🌡️ Current weather big display card  
+- 📅 5-Day forecast  
+- 🌈 Dynamic background based on weather condition  
+- 💧 Humidity & 🌬️ Wind speed display  
+- ⏳ Loading indicator  
+- ❌ Error handling (City not found)  
+- 📱 Fully responsive design  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack  
+
+- ⚛️ React (Vite)  
+- 🎨 CSS3  
+- 🌐 OpenWeather API  
+- 📦 JavaScript (ES6+)  
+
+---
+
+## 📂 Project Structure  
+``` bash
+my-weather-app/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── CurrentWeather.jsx
+│   │   ├── CurrentWeather.css
+│   │   ├── Loader.jsx
+│   │   ├── Loader.css
+│   │   ├── WeatherCard.jsx
+│   │   ├── WeatherCard.css
+│   │
+│   ├── api.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+
+---
+
+## 🔑 Environment Variables  
+
+Create a `.env` file in the root directory and add:
+
+You can get a free API key from:  
+👉 https://openweathermap.org/api
+
+⚠️ Do not upload your `.env` file to GitHub.
+
+---
+
+## ⚙️ Installation & Setup  
+
+### 1️⃣ Clone the Repository  
+
+```bash
+git clone https://github.com/your-username/Weather-App.git
+cd my-weather-app
+```
+## 2️⃣ Install Dependencies
+``` bash
+npm install
+```
+
+## 3️⃣ Run the Development Server
+```bash
+npm run dev
+```
+
+## 🎯 How It Works
+
+- User enters a city name
+- App fetches weather data from OpenWeather API
+
+### Displays:
+
+- Current weather (first forecast item)
+- 5 day forecast (filtered at 12:00 PM)
+- Background changes dynamically based on weather condition
+
+
+## 👩‍💻 Author
+
+**Sadhana Shree**
+
